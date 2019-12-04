@@ -2,4 +2,20 @@ body {
     margin: 0;
     background-color: #333333;
     color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+/* # displaying next to header */
+.section-a {
+    color: rgb(92, 92, 92);
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+p:hover .section-a {
+    color: rgb(92, 92, 92);
+    opacity: 1;
+    text-decoration: none;
+}
+.section-a:hover {
+    color: rgb(151, 151, 151) !important;
 }
