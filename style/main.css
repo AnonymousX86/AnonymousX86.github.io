@@ -28,6 +28,7 @@ header {
     background-origin: content-box;
     background-size: cover;
     background-attachment: scroll;
+    image-rendering: optimizeSpeed;
     text-shadow: 2px 2px 0 black;
 }
 
@@ -46,7 +47,7 @@ header div {
     height: 150px;
     position: absolute;
     top: 45%;
-    left: 60px;
+    left: 45px;
 }
 
 @media (max-width: 575.98px) {
@@ -57,6 +58,12 @@ header div {
         left: 0;
         top: 35%;
         padding: 0 20px;
+    }
+    .my-photo {
+        width: 65%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -80,8 +87,4 @@ header div .h1 {
     padding: 10px 40px;
     width: 100%;
     margin-bottom: 35px;
-}
-
-.my-photo {
-    image-rendering: auto;
 }
