@@ -1,3 +1,4 @@
+/* ===== General ===== */
 body {
     margin: 0;
     background-color: #333333;
@@ -5,17 +6,82 @@ body {
     scroll-behavior: smooth;
 }
 
-/* # displaying next to header */
-.section-a {
-    color: rgb(92, 92, 92);
-    opacity: 0;
-    transition: all .3s ease-out;
+/* Only vertical margin between each section */
+section {
+    margin: 55px 0;
 }
-p:hover .section-a {
-    color: rgb(92, 92, 92);
-    opacity: 1;
-    text-decoration: none;
+
+/* Making text more readable */
+p {
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
 }
-.section-a:hover {
-    color: rgb(151, 151, 151) !important;
+
+
+/* ===== Header ===== */
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./../img/header-1.jpg");
+    background-position: top;
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    text-shadow: 2px 2px 0 black;
+}
+
+.background-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+}
+
+header div {
+    width: 512px;
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 60px;
+}
+
+@media (max-width: 575.98px) {
+    header div {
+        position: relative;
+        width: auto;
+        height: auto;
+        left: 0;
+        top: 35%;
+        padding: 0 20px;
+    }
+}
+
+header div .h1 {
+    font-size: 80px;
+}
+
+.reflink {
+    font-size: 11px;
+    color: white !important;
+    opacity: 0.5;
+    transition: all .5s ease-out;
+}
+.reflink:hover {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.section-title {
+    background-color: rgb(26, 138, 17);
+    padding: 10px 40px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.my-photo {
+    image-rendering: auto;
 }
