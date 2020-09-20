@@ -34,31 +34,57 @@
   <link href="./src/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-dark text-white">
+<nav class="navbar navbar-expand-md navbar-light bg-orange">
+  <a class="navbar-brand" href="#">
+    <img src="https://avatars1.githubusercontent.com/u/53279236?s=460&v=4"
+         alt="" width="30" height="30" class="rounded" />
+    AnonymousX86
+  </a>
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="https://github.com/AnonymousX86" class="nav-link"
+           rel="author">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#"
+           class="nav-link" target="_blank" rel="noopener">
+          <i class="fab fa-discord"></i> Discord
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <div class="container">
+  <main>
     <div class="row">
-        <div class="col mt-5 text-center">
-            <h1>Hello world!</h1>
-            <p>It's me, Jakub.</p>
-            <p>
-                <i class="fas fa-tools"></i>
-            </p>
-            <p>
-                Looks like this page is currently under build... Please come
-                back Later!
-            </p>
-        </div>
+      <div class="col mt-5 text-center">
+        <h1>Hello world!</h1>
+        <p>It's me, Jakub.</p>
+        <p>
+          <i class="fas fa-tools"></i>
+        </p>
+        <p>
+          Looks like this page is currently under build... Please come
+          back Later!
+        </p>
+      </div>
     </div>
+  </main>
+  <footer></footer>
 </div>
 
 <!-- Loading JS -->
 <!--suppress SpellCheckingInspection -->
-<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+<script crossorigin="anonymous" defer
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-        crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script defer src="https://unpkg.com/@popperjs/core@2"></script>
 <script defer src="./src/bootstrap/js/bootstrap.min.js"></script>
-<script defer src="https://kit.fontawesome.com/95d17f84a7.js"
-        crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer
+        src="https://kit.fontawesome.com/95d17f84a7.js"></script>
 </body>
 </html>
