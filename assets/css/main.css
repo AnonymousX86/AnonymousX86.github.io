@@ -1,5 +1,20 @@
-.bg-lime {
+.bg-lime, .btn-lime {
     background-color: #6ec60f;
+    border-color: #6ec60f;
+    color: black;
+}
+.btn-lime:hover {
+    background-color: #64b30e;
+    border-color: #64b30e;
+}
+.btn-lime:focus {
+    background-color: #64b30e;
+    border-color: #64b30e;
+    box-shadow: 0 0 0 0.25rem #55990b;
+}
+.card.bg-dark {
+    background-color: #18191c !important;
+    border: none;
 }
 .fas {
     font-size: 3rem;
